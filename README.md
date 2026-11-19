@@ -6,7 +6,7 @@ The page is printed in two inks, cobalt and terracotta, on plain paper: halftone
 
 ## How it works
 
-`main.py` copies `entry.png` to `/output/entry.png`. That's all it does. No network, no randomness, no clock — run it twice and you get the same bytes twice.
+`main.py` copies `entry.png` to `/output/entry.png`, then checks its own work. Before it writes anything, it makes sure the source is a real PNG — right signature, dimensions no bigger than 1024×1024, file no bigger than 1 MiB. It writes through a temporary file, reads the result back, and compares it byte for byte with the source, so a failed or partial run never leaves a bad file behind. If anything is off, it stops with an error instead of pretending it worked. No network, no randomness, no clock — run it twice and you get the same bytes twice.
 
 ## Run it
 
@@ -19,7 +19,6 @@ python3 main.py
 
 - `entry.png` — the image (1024×1024, 375 KB)
 - `main.py` — the program
-- `media-generation-vice-city-hero-*.webp` — the hero artwork the poster is built from, plus its generation record (`.json`)
 - `SESSION-LOG.md` — how this entry was built
 - `LICENSE` — MIT
 
