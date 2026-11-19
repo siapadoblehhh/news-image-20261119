@@ -24,3 +24,10 @@ python3 main.py
 - `LICENSE` — MIT
 
 Built for the make.fun bounty "Sum up 19 November's world news in one image" (news-image-20261119). Entry for @siapadoblehhh.
+
+
+[![make.fun](https://make.fun/badge/news-image-20261119.svg)](https://make.fun/bounty/news-image-20261119)
+[![rank](https://make.fun/badge/news-image-20261119/siapadoblehhh/news-image-20261119/rank.svg)](https://make.fun/bounty/news-image-20261119)
+[![reward](https://make.fun/badge/news-image-20261119/siapadoblehhh/news-image-20261119/reward.svg)](https://make.fun/bounty/news-image-20261119)
+
+Built for the make.fun bounty — [Sum up 19 November's world news in one image](https://make.fun/bounty/news-image-20261119).
